@@ -102,7 +102,7 @@
     }
   },
   "dependencies": {
-    "dotenv": "8.5.1",
+    "dotenv": "9.0.0",
     "invariant": "2.2.4"
   },
   "devDependencies": {
