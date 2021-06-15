@@ -38,10 +38,7 @@ Cypress.Commands.add('testChallenges', () => {
   cy.get('#description').should('be.visible');
 
   // Monaco editor
-  cy.get('.react-monaco-editor-container')
-    .click()
-    .focused()
-    .type('<h1> Hello world! </h1>');
+  cy.get('.react-monaco-editor-container', { timeout: 30000 });
 
   // Ensure that there are test
   cy.get('.challenge-test-suite').children().its('length').should('be.gt', 0);
